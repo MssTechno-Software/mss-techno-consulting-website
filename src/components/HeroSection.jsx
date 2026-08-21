@@ -41,8 +41,8 @@ const STORIES = [
         location: "Hyderabad",
         package: "18 LPA",
         achievementText: "Krishna Kumar Yedida has successfully secured the position of QA Automation at L&T Technology Services, Hyderabad with an outstanding annual package of 18 LPA. MSS Techno played a vital role in sharpening his technical knowledge, strengthening his problem-solving skills, and preparing him for interviews, helping him achieve this remarkable success.",
-        profileImage: "/Hero-Reviews/P-krishnakumar.jpeg",
-        whatsappImage: "/Hero-Reviews/W-krishnakumar.png",
+        profileImage: "/Hero-Reviews/P-krishnakumar.avif",
+        whatsappImage: "/Hero-Reviews/W-krishnakumar.avif",
         badges: [
             { type: "skills", title: "Technical Skills", value: "Strengthened" },
             { type: "problem", title: "Problem Solving", value: "Improved" },
@@ -70,8 +70,8 @@ const STORIES = [
         location: "Hyderabad",
         package: "15 LPA",
         achievementText: "Ajay Kumar Raavi successfully secured the role of Azure DevOps Engineer at Wipro, Hyderabad, with an impressive annual salary of 15 LPA. MSS Technologies played a pivotal role in shaping Ajay's successful career transition, enhancing his profile and guiding his job search. He successfully secured 3 offers.",
-        profileImage: "/Hero-Reviews/P-ajay.png",
-        whatsappImage: "/Hero-Reviews/W-ajay.png",
+        profileImage: "/Hero-Reviews/P-ajay.avif",
+        whatsappImage: "/Hero-Reviews/W-ajay.avif",
         badges: [
             { type: "transition", title: "Career Transition", value: "Guided" },
             { type: "profile", title: "Profile Enhancement", value: "Improved" },
@@ -99,8 +99,8 @@ const STORIES = [
         location: "Hyderabad",
         package: "4.5 LPA",
         achievementText: "Hari Krishna Aldandi successfully secured the role of Java Developer at Digit Secure Private Limited, Hyderabad, with an annual salary of 4.5 LPA. MSS Technologies played a pivotal role in shaping his successful career transition, providing valuable assistance in enhancing his profile and guiding his job search.",
-        profileImage: "/Hero-Reviews/P-harikrishna.png",
-        whatsappImage: "/Hero-Reviews/W-harikrishna.png",
+        profileImage: "/Hero-Reviews/P-harikrishna.avif",
+        whatsappImage: "/Hero-Reviews/W-harikrishna.avif",
         badges: [
             { type: "expertise", title: "Java Expertise", value: "Strengthened" },
             { type: "transition", title: "Career Transition", value: "Supported" },
@@ -128,8 +128,8 @@ const STORIES = [
         location: "Pune",
         package: "9.50 LPA",
         achievementText: "Sohel Ayyub Bagwan successfully secured the role of ReactJS Developer at TLG India Pvt. Ltd., a product-based company in Pune, his preferred location, with an impressive annual salary of 9.50 LPA. MSS Technologies played a pivotal role in shaping Sohel's successful career transition in less than a month, providing invaluable assistance in enhancing his profile and guiding his job search.",
-        profileImage: "/Hero-Reviews/P-sohel.png",
-        whatsappImage: "/Hero-Reviews/W-sohel.png",
+        profileImage: "/Hero-Reviews/P-sohel.avif",
+        whatsappImage: "/Hero-Reviews/W-sohel.avif",
         badges: [
             { type: "transition", title: "Career Transition", value: "Less Than 1 Month" },
             { type: "profile", title: "Profile Enhancement", value: "Improved" },
