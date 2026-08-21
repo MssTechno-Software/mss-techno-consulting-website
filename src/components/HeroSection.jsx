@@ -137,7 +137,7 @@ const STORIES = [
             { type: "location", title: "Preferred Location", value: "Pune" },
         ],
     },
-];
+];  
 /* =========================================================
    LEFT SECTION VARIANTS DATA
    ========================================================= */

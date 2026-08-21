@@ -25,7 +25,7 @@ const REVIEW_MEDIA = [
   },
   {
     type: "image",
-    src: "/Hero-Reviews/W-krishnakumar.png",
+    src: "/Hero-Reviews/W-krishnakumar.avif",
   },
   {
     type: "image",
@@ -33,7 +33,7 @@ const REVIEW_MEDIA = [
   },
   {
     type: "image",
-    src: "/Hero-Reviews/W-harikrishna.png",
+    src: "/Hero-Reviews/W-harikrishna.avif",
   },
   {
     type: "image",
@@ -41,7 +41,7 @@ const REVIEW_MEDIA = [
   },
   {
     type: "image",
-    src: "/Hero-Reviews/W-ajay.png",
+    src: "/Hero-Reviews/W-ajay.avif",
   },
   {
     type: "image",
@@ -49,7 +49,7 @@ const REVIEW_MEDIA = [
   },
   {
     type: "image",
-    src: "/Hero-Reviews/W-sohel.png",
+    src: "/Hero-Reviews/W-sohel.avif",
   },
  
 ];
