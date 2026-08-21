@@ -14,19 +14,22 @@ import SeekerStruggle from "../components/SeekersStruggle";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 
+import LazySection from "../components/LazySection";
 export default function Home() {
   return (
     <>
       <Navbar />
       <main>
         <HeroSection />
-        <HiringPartners />
+       <HiringPartners />
         <Services />
         <WhoWeHelp />
         <WhyChooseUs/>
         <WhatWeOffer/>
         <IndustryExpert/>
+        <LazySection>
         <Reviews/>
+        </LazySection>
         <OurCommitment/>
         <ContactSection/>
         <PremiumMentoring/>

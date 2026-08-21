@@ -456,27 +456,28 @@ export default function Navbar() {
 
   return (
     <header
-      className="fixed left-0 right-0 top-0 z-[100] w-full"
+      className="fixed left-0 right-0 top-0 z-[999] w-full isolation-isolate"
     >
+
       <motion.div
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 180, damping: 24 }}
-        className={`relative w-full border-b transition-all duration-500 ease-out ${scrolled ? "border-white/80 bg-[#F8F6F2]/78 shadow-[0_8px_30px_rgba(77,139,79,0.08)]" : "border-white/65 bg-[#F8F6F2]/58 shadow-[0_4px_22px_rgba(77,139,79,0.045)]"} backdrop-blur-2xl backdrop-saturate-150`}
+        className={`relative w-full border-b transition-all duration-500 ease-out ${scrolled ? "border-white/65 bg-white/28 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),inset_0_-1px_0_rgba(255,255,255,0.18),0_12px_38px_rgba(77,139,79,0.10)]" : "border-white/55 bg-white/18 shadow-[inset_0_1px_0_rgba(255,255,255,0.82),inset_0_-1px_0_rgba(255,255,255,0.12),0_8px_28px_rgba(77,139,79,0.06)]"} backdrop-blur-2xl backdrop-saturate-150`}
       >
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/90"
         />
 
         <div
-          className="pointer-events-none absolute -left-20 top-0 h-full w-[320px] bg-[#EADBC8]/10 blur-3xl"
+          className="pointer-events-none absolute -left-20 top-0 h-full w-[320px] bg-[#EADBC8]/12 blur-3xl"
         />
 
         <div
-          className="pointer-events-none absolute right-[-80px] top-0 h-full w-[320px] bg-[#A7D98E]/8 blur-3xl"
+          className="pointer-events-none absolute right-[-80px] top-0 h-full w-[320px] bg-[#A7D98E]/10 blur-3xl"
         />
 
         <div
-          className="relative mx-auto flex min-h-[78px] w-full max-w-[1600px] items-center justify-between gap-5 px-5 sm:px-7 lg:px-10 xl:px-14"
+          className="relative mx-auto flex min-h-[76px] w-full max-w-[1600px] items-center justify-between gap-3 px-4 sm:min-h-[78px] sm:px-6 lg:gap-5 lg:px-8 xl:px-12 2xl:px-14"
         >
           {/* LOGO */}
 
@@ -484,13 +485,13 @@ export default function Navbar() {
             type="button"
             onClick={() => scrollToSection("Home")}
             aria-label="Go to homepage"
-            className="group relative z-10 flex h-14 w-[360px] shrink-0 cursor-pointer items-center px-1 py-1 outline-none"
+            className="group relative z-10 flex h-14 w-auto min-w-0 shrink-0 cursor-pointer items-center px-1 py-1 outline-none lg:w-[330px] xl:w-[360px]"
           >
             <motion.div
               whileHover={{ y: -1, scale: 1.025 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 420, damping: 24 }}
-              className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/85 bg-white/65 shadow-[0_7px_22px_rgba(77,139,79,0.08)] backdrop-blur-xl"
+              className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center sm:h-12 sm:w-12 overflow-hidden rounded-full border border-white/75 bg-white/42 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_7px_22px_rgba(77,139,79,0.08)] backdrop-blur-2xl"
             >
               <img
                 src="../logo.png"
@@ -502,7 +503,7 @@ export default function Navbar() {
               className="absolute left-[68px] top-1/2 flex -translate-y-1/2 flex-col justify-center text-left"
             >
               <span
-                className="font-sans text-[20px] font-extrabold leading-none tracking-[-0.035em] text-[#6B2D1A]"
+                className="font-sans text-[18px] font-extrabold sm:text-[20px] leading-none tracking-[-0.035em] text-[#6B2D1A]"
               >MSS Techno</span>
               <span
                 className="mt-2 whitespace-nowrap text-[9px] font-semibold leading-none tracking-[0.08em] text-[#4D8B4F]"
@@ -514,7 +515,7 @@ export default function Navbar() {
 
           <nav
             aria-label="Main navigation"
-            className="relative z-10 hidden items-center gap-0.5 rounded-full border border-white/75 bg-white/30 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_5px_18px_rgba(107,45,26,0.025)] backdrop-blur-xl md:flex"
+            className="relative z-10 hidden items-center gap-0.5 rounded-full border border-white/60 bg-white/18 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_8px_24px_rgba(107,45,26,0.05)] backdrop-blur-2xl backdrop-saturate-150 lg:flex"
           >
             {visibleNavItems.map(
               (item) => {
@@ -533,7 +534,7 @@ export default function Navbar() {
                       <motion.span
                         layoutId="mss-navbar-active"
                         transition={{ type: "spring", stiffness: 430, damping: 32, mass: 0.55 }}
-                        className="absolute inset-0 rounded-full border border-white/90 bg-white/78 shadow-[0_6px_20px_rgba(107,45,26,0.055),inset_0_1px_0_rgba(255,255,255,0.95)]"
+                        className="absolute inset-0 rounded-full border border-white/75 bg-white/52 shadow-[0_8px_24px_rgba(107,45,26,0.07),inset_0_1px_0_rgba(255,255,255,0.95)] backdrop-blur-xl"
                       />
                     )}
 
@@ -576,7 +577,7 @@ export default function Navbar() {
             whileHover={{ y: -1, scale: 1.015 }}
             whileTap={{ scale: 0.975 }}
             transition={{ type: "spring", stiffness: 420, damping: 23 }}
-            className="group relative z-10 hidden shrink-0 cursor-pointer items-center gap-2 overflow-hidden rounded-full border border-[#4D8B4F]/20 bg-[#4D8B4F] px-5 py-3 text-[13px] font-bold text-white shadow-[0_9px_26px_rgba(77,139,79,0.16)] md:flex"
+            className="group relative z-10 hidden shrink-0 cursor-pointer items-center gap-2 overflow-hidden rounded-full border border-white/60 bg-[#4D8B4F]/72 px-5 py-3 text-[13px] font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_12px_30px_rgba(77,139,79,0.22)] backdrop-blur-2xl lg:flex"
           >
             <span
               className="pointer-events-none absolute inset-y-0 -left-12 w-10 rotate-[18deg] bg-white/20 blur-md transition-all duration-700 group-hover:left-[125%]"
@@ -597,7 +598,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.92 }}
             aria-label={mobileOpen ? "Close navigation" : "Open navigation"}
             aria-expanded={mobileOpen}
-            className="relative z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/80 bg-white/60 text-[#6B2D1A] shadow-[0_6px_18px_rgba(77,139,79,0.06)] backdrop-blur-xl md:hidden"
+            className="relative z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/70 bg-white/30 text-[#6B2D1A] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_10px_26px_rgba(77,139,79,0.10)] backdrop-blur-2xl backdrop-saturate-150 lg:hidden"
           >
             <AnimatePresence
               mode="wait"
@@ -644,7 +645,7 @@ export default function Navbar() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
               onClick={() => setMobileOpen(false)}
-              className="fixed inset-0 z-[-1] bg-[#6B2D1A]/5 backdrop-blur-[2px] md:hidden"
+              className="fixed inset-0 z-[-1] bg-[#6B2D1A]/5 backdrop-blur-[2px] lg:hidden"
             />
 
             <motion.div
@@ -652,7 +653,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -12, scale: 0.98 }}
               transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
-              className="mx-4 mt-2 rounded-[24px] border border-white/80 bg-[#F8F6F2]/82 p-3 shadow-[0_20px_55px_rgba(77,139,79,0.10)] backdrop-blur-2xl sm:mx-6 md:hidden"
+              className="mx-3 mt-2 rounded-[26px] border border-white/75 bg-white/28 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_24px_65px_rgba(77,139,79,0.14)] backdrop-blur-3xl backdrop-saturate-150 sm:mx-5 lg:hidden"
             >
               <nav
                 aria-label="Mobile navigation"
@@ -672,7 +673,7 @@ export default function Navbar() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.035, duration: 0.24 }}
                         onClick={(event) => handleNavigation(item, event)}
-                        className={`group relative flex w-full cursor-pointer items-center rounded-2xl px-4 py-3 text-left text-sm font-semibold outline-none transition-all duration-300 ${isActive ? "bg-white/82 text-[#6B2D1A] shadow-[0_5px_18px_rgba(77,139,79,0.06)]" : "text-[#263026]/70 hover:bg-[#A7D98E]/10 hover:text-[#6B2D1A]"}`}
+                        className={`group relative flex w-full cursor-pointer items-center rounded-2xl px-4 py-3 text-left text-sm font-semibold outline-none transition-all duration-300 ${isActive ? "bg-white/48 text-[#6B2D1A] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_5px_18px_rgba(77,139,79,0.08)] backdrop-blur-xl" : "text-[#263026]/70 hover:bg-[#A7D98E]/10 hover:text-[#6B2D1A]"}`}
                       >
                         <span
                           className="relative z-10"
@@ -695,7 +696,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.24, duration: 0.28 }}
                 onClick={() => scrollToSection("Contact")}
-                className="group relative mt-3 flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-[#4D8B4F] px-5 py-3.5 text-sm font-bold text-white shadow-[0_9px_24px_rgba(77,139,79,0.15)]"
+                className="group relative mt-3 flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full border border-white/70 bg-[#4D8B4F]/82 px-5 py-3.5 text-sm font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_12px_30px_rgba(77,139,79,0.22)] backdrop-blur-2xl"
               >
                 <span
                   className="pointer-events-none absolute inset-y-0 -left-12 w-10 rotate-[18deg] bg-white/20 blur-md transition-all duration-700 group-hover:left-[125%]"

@@ -361,46 +361,7 @@ export default function AboutHeroSection() {
                       label="Client Satisfaction"
                     />
                   </div>
-                </div>
-
-                {/* =================================================
-                    FLOATING TRUST CARD
-                ================================================= */}
-
-                <div
-                  className="absolute -bottom-5 -left-4 hidden rounded-[20px] border border-white bg-white/85 px-4 py-3 shadow-[0_18px_45px_rgba(65,55,40,0.10)] backdrop-blur-2xl sm:block lg:-left-10"
-                >
-                  <div className="flex items-center gap-3">
-                    <div
-                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#E8F3E5] text-[#4D8B4F]"
-                    >
-                      <Award className="h-4 w-4" />
-                    </div>
-
-                    <div>
-                      <p
-                        className="text-[10px] font-black text-[#6B2D1A]"
-                      >
-                        Career-focused guidance
-                      </p>
-
-                      <p
-                        className="mt-0.5 text-[9px] font-bold uppercase tracking-[0.12em] text-[#4D8B4F]/75"
-                      >
-                        Built around your goals
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating label */}
-
-                <div
-                  className="absolute -right-3 -top-5 hidden items-center gap-2 rounded-full border border-white bg-white/80 px-4 py-2.5 text-[9px] font-black uppercase tracking-[0.15em] text-[#6B2D1A]/70 shadow-[0_15px_35px_rgba(65,55,40,0.08)] backdrop-blur-2xl sm:flex lg:-right-7"
-                >
-                  <span className="h-2 w-2 animate-pulse rounded-full bg-[#4D8B4F]" />
-                  Professional Growth
-                </div>
+                </div>            
               </div>
             </Reveal>
           </div>
